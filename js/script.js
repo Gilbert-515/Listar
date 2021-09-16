@@ -39,7 +39,7 @@
         const id = item.getAttribute('id');
         const ElementFilho = document.getElementById(id);
         const ElementoPai = ElementFilho.parentNode;
-        lista.removeChild(ElementoPai);
+        lista.removeChild(ElementoPai); 
     }
 
     const dataHoje = () => {
