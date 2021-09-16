@@ -31,6 +31,10 @@ li{
     width: 210px;
     margin: 0 18px;
     text-align: left;
+    overflow: auto;
+}
+li::-webkit-scrollbar{
+    display: none;
 }
 form{
     margin-bottom: 40px;
@@ -61,6 +65,7 @@ button{
     border-radius: 4px;
     text-transform: uppercase;
     cursor: pointer;
+    height: 26px; 
 }
 input{
     height: 15px;

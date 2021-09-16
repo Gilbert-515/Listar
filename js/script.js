@@ -5,7 +5,7 @@
     
     buttonAdd.addEventListener('click',(event) =>{
         event.preventDefault();
-
+        
         const newItem = document.createElement('span');
         newItem.innerHTML =`
         <input type="checkbox" 
@@ -60,5 +60,6 @@
         return data;
     }
     document.getElementById('data').innerText = dataHoje();
+
 
 
