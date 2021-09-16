@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto Slab';
+}
+body{
+    text-align: center;
+    background: #15424eec;
+}
+h1{
+    color: white;
+}
+ul{
+    display: grid;
+    padding: 0;   
+}
+ul span{
+    display: inline-flex;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    padding: 16px;
+    padding-left: 30px;
+}
+ul span:nth-child(even){
+    background: #ddd;
+}
+li{
+    list-style: none;
+    width: 210px;
+    margin: 0 18px;
+    text-align: left;
+}
+form{
+    margin-bottom: 40px;
+}
+form input{
+    border: 1px solid rgb(167, 164, 164);
+    border-radius: 4px;
+    width: 260px;
+    height: 30px;
+    font-size: 16px;
+}
+form input:focus{
+    outline: 0;
+    border-color: rgb(3, 118, 194);
+}
+form button{
+    background: rgb(2, 172, 87);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    width: 90px;
+    height: 32px;
+}
+button{
+    border: 1px solid red;
+    background: transparent;
+    color: red;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+input{
+    height: 15px;
+    width: 15px;   
+}
+#data{
+    border:1px solid #aaa;
+    border-radius: 4px;
+    background: #eee;
+    color: #111;
+    width: 160px;
+    margin: 10px auto;
+    padding: 8px 0;
+}
+.concluido{
+    text-decoration: line-through;
+}
+/* responsive mobile*/
+@media(max-width: 450px){
+
+    form input{
+        width: 230px;
+        height: 35px;
+    }
+    form button{
+        height: 38px;
+    }
+    ul span{
+        padding: 15px 6px;
+        width: 330px;
+    }
+    li{
+        width: 200px;
+    }
+
+}
