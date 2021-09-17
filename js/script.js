@@ -25,9 +25,9 @@
     });
 
     const concluir = (item) => {
-       let id = item.getAttribute('id');
-       let posicao = id.split('-');
-       let numeroItem = posicao[1];
+       const id = item.getAttribute('id');
+       const posicao = id.split('-');
+       const numeroItem = posicao[1];
        const Item = document.querySelector(`#item-${numeroItem}`);
        
        item.checked ? 
