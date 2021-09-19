@@ -3,7 +3,7 @@
     const lista = document.querySelector('ul');
     let contador_click = 0;
     
-    buttonAdd.addEventListener('click',(event) =>{
+    buttonAdd.addEventListener('click',(event) => {
         event.preventDefault();
         
         const newItem = document.createElement('span');
