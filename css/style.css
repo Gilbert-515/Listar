@@ -12,7 +12,8 @@ h1{
 }
 ul{
     display: grid;
-    padding: 0;   
+    padding: 0;
+    margin: 0;   
 }
 ul span{
     display: inline-flex;
@@ -71,17 +72,27 @@ input{
     height: 15px;
     width: 15px;   
 }
-#data{
-    border:1px solid #aaa;
-    border-radius: 4px;
-    background: #eee;
-    color: #111;
-    width: 160px;
-    margin: 10px auto;
-    padding: 8px 0;
+.nameList {
+    border: 0;
+    border-bottom: solid 1px #307b92;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 23px 5px 23px;
+    width: 350px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+}
+.nameList:focus{
+    outline: 0;
+}
+.nameList::placeholder{
+    color: #123b57;
 }
 .concluido{
     text-decoration: line-through;
+}
+.preenchido{
+    background: #b2dffd;
 }
 /* responsive mobile*/
 @media(max-width: 450px){

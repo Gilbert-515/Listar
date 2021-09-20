@@ -59,4 +59,4 @@
         const data = `${dia}-${mes}-${ano}`;
         return data;
     }
-    document.getElementById('data').innerText = dataHoje();
+    
