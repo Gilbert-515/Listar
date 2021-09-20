@@ -60,8 +60,3 @@
         return data;
     }
     document.getElementById('data').innerText = dataHoje();
-
-
-
-
-
