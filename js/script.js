@@ -1,11 +1,12 @@
-    const buttonAdd = document.querySelector('form button');
+    const buttonSave = document.querySelector('#btn-save');
     const inputForm = document.querySelector('form input');
     const lista = document.querySelector('ul');
+    let item = [];
     let contador_click = 0;
-    
-    buttonAdd.addEventListener('click',(event) => {
+
+    const addItem = (event) => {
         event.preventDefault();
-        
+
         const newItem = document.createElement('span');
         newItem.innerHTML =`
         <input type="checkbox" 
@@ -21,15 +22,16 @@
             lista.appendChild(newItem); 
             inputForm.value = '';
             contador_click += 1;         
+            buttonSave.style.display = 'block';         
         }
-    });
+    };
 
     const concluir = (item) => {
        const id = item.getAttribute('id');
        const posicao = id.split('-');
        const numeroItem = posicao[1];
-       const Item = document.querySelector(`#item-${numeroItem}`);
-       
+       const Item = document.querySelector(`#item-${numeroItem}`);  
+          
        item.checked ? 
        Item.classList.add('concluido') : 
        Item.classList.remove('concluido');
@@ -39,7 +41,12 @@
         const id = item.getAttribute('id');
         const ElementFilho = document.getElementById(id);
         const ElementoPai = ElementFilho.parentNode;
-        lista.removeChild(ElementoPai); 
+        lista.removeChild(ElementoPai);
+        
+        const itensList = document.querySelectorAll('ul span');
+        itensList.length == 0 ?
+        buttonSave.style.display = 'none':
+        buttonSave.style.display = 'block';            
     }
 
     const dataHoje = () => {
@@ -60,3 +67,12 @@
         return data;
     }
     
+    const saveList = () => {
+        const nameList = document.querySelector('#nameList').value;
+        const itensList = document.querySelectorAll('ul span');     
+        for(let i=0; i<itensList.length; i++){          
+            item[i] = itensList[i].children[1].innerText;            
+        }
+        
+        
+    };
