@@ -149,13 +149,16 @@ section{
 }
 /* responsive mobile*/
 @media(max-width: 450px){
-
+    form{
+        margin: 30px 0;
+    }
     form input{
-        width: 195px;
+        width: 220px;
         height: 35px;
     }
     form button{
         height: 36px;
+        margin-left: 5px;
     }
     ul span{
         padding: 15px 6px;
