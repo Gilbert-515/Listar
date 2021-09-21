@@ -151,11 +151,11 @@ section{
 @media(max-width: 450px){
 
     form input{
-        width: 230px;
+        width: 195px;
         height: 35px;
     }
     form button{
-        height: 38px;
+        height: 36px;
     }
     ul span{
         padding: 15px 6px;
@@ -165,7 +165,7 @@ section{
         width: 200px;
     }
     section{
-        margin: 0;
+        margin: 7.5px;
         margin-top: 3.5px;
         width: 345px;
     }
