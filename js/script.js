@@ -73,6 +73,5 @@
         for(let i=0; i<itensList.length; i++){          
             item[i] = itensList[i].children[1].innerText;            
         }
-        
-        
+             
     };
